@@ -9,3 +9,5 @@ It will allow you to use py to start the file instead of python.
 ## How to run
 Open your command prompt and type in:
 py and then the file path to main.py
+## Other
+Please request new features in issues
