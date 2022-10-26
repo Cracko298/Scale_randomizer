@@ -3,7 +3,7 @@
 
 # Setup:
 - Install [Python Here](https://www.python.org/downloads/)
-- Requires Modules: [os.system](https://docs.python.org/3/library/os.html), [random](https://docs.python.org/3/library/random.html), & [time](https://docs.python.org/3/library/time.html)
+- Requires Modules: [os.system](https://docs.python.org/3/library/os.html), [random](https://docs.python.org/3/library/random.html), & [time](https://docs.python.org/3/library/time.html).
 
 # How To Use:
 - Navigate to the Script's Path.
