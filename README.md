@@ -1,5 +1,6 @@
 # Scale Randomizer:
 - Returns with a randomized musical scale based on user input.
+- Or try it out on [replit](https://replit.com/@Cracko298/Scale-Randomizer).
 
 # Setup:
 - Install [Python Here](https://www.python.org/downloads/)
