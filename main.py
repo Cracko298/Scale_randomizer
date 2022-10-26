@@ -1,74 +1,73 @@
-while True:
- import random
+from random import randint
+from time import sleep
+from os import system
 
+list0 = ['Major','major','MAJOR'] ; list1 = ['Minor','minor','MINOR'] ; listY = ['Yes','yes','y','Y'] ; listN = ['No','no','n','N']
 
- set = input("What Set of scales would you like? Major or minor?\n")
+def MusicNotes():
+    question = input("What Scale Would You Like? ('Major' or 'Minor'): ") ; print(" ")
+      
+    if question in list0: # Major Scales Below
+        major1 = randint(0,12)
+        if major1 == 1:
+            print("C Major")
+        if major1 == 2:
+            print("Db Major")
+        if major1 == 3:
+            print("D Major")
+        if major1 == 4:
+            print("Eb Major")
+        if major1 == 5:
+            print("E Major")
+        if major1 == 6:
+            print("F Major")
+        if major1 == 7:
+            print("F# Major")
+        if major1 == 8:
+            print("G Major")
+        if major1 == 9:
+            print("Ab Major")
+        if major1 == 10:
+            print("A Major")
+        if major1 == 11:
+            print("Bb Major")
+        if major1 == 12:
+            print("B Major")
 
- if set == "Major" or "major":
-   scale =  random.randint(1, 12)
- elif set == "Minor" or "minor":
-   scale =  random.randint(13, 24)
- else:
-   print("please enter scale set again")
-
-
-
- if scale == 1:
-    print("C major")
- elif scale == 2:
-  print("Db major")
- elif scale == 3:
-   print("D major")
- elif scale == 4:
-  print("Eb major")
- elif scale == 5:
-  print("E major")
- elif scale == 6:
-  print("F major")
- elif scale == 7:
-  print("F# major")
- elif scale == 8:
-  print("G major")
- elif scale == 9:
-  print("Ab major")
- elif scale == 10:
-  print("A major")
- elif scale == 11:
-  print("Bb major")
- elif scale == 12:
-  print("B major")
- elif scale == 13:
-  print("C minor")
- elif scale == 14:
-  print("C# minor")
-#hehe c# hehe
- elif scale == 15:
-  print("D minor")
- elif scale == 16:
-  print("Eb minor")
- elif scale == 17:
-  print("E minor")
- elif scale == 18:
-  print("F minor")
- elif scale == 19:
-  print("F# minor")
- elif scale == 20:
-  print("G minor")
- elif scale == 21:
-  print("G# minor")
- elif scale == 22:
-  print("A minor")
- elif scale == 23:
-  print("Bb minor")
- elif scale == 24:
-  print("B minor")
- else:
-  print("Error:Unexpected integer")
-
- restart = input("Again? Y/n \n")
- if restart == "Y" or "y":
-    continue    
- elif restart == "n" or "N":
-  exit()
- else:
-  print("?")
+    if question in list1: # Minor Scales Below
+        minor1 = randint(13,24)
+        if minor1 == 13:
+            print("C Minor")
+        if minor1 == 14:
+            print("C# Minor")
+        if minor1 == 15:
+            print("D Minor")
+        if minor1 == 16:
+            print("Eb Minor")
+        if minor1 == 17:
+            print("E Minor")
+        if minor1 == 18:
+            print("F Minor")
+        if minor1 == 19:
+            print("F# Minor")
+        if minor1 == 20:
+            print("G Minor")
+        if minor1 == 21:
+            print("G# Minor")
+        if minor1 == 22:
+            print("A Minor")
+        if minor1 == 23:
+            print("Bb Minor")
+        if minor1 == 24:
+            print("B Minor")
+    if question not in list0:
+      if question not in list1:
+        print("Invalid Response To Privided Question.") ; sleep(2) ; system('clear') ; MusicNotes()
+          
+    sleep(2) ; print(" ") ; yesorno = input("Would Your Like to Restart? ('Yes' or 'No'): ")
+  
+    if yesorno in listN:
+        sleep(1) ; exit()
+    if yesorno in listY:
+        sleep(1) ; system('clear') ; MusicNotes()
+MusicNotes()
