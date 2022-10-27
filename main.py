@@ -74,7 +74,7 @@ def MusicNotes():
 
   sleep(2)
   print(" ")
-  yesorno = input("Would You Like to Restart? ('Yes' or 'No'): ")
+  yesorno = input("Would Your Like to Restart? ('Yes' or 'No'): ")
 
   if yesorno in listN:
     sleep(1)
